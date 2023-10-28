@@ -35,7 +35,7 @@ _start:
 _main:
 	adr	x15, scroll_text	// number of scorll iterations
 	mov	w14, 0			// bit counter in X14/W14
-.scrl:
+.scrl:	
 	ands	w14, w14, #7		// every 8 bits, get new character
 	b.ne	.next
 
